@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "goTop", //扩展名称
+    "version": "1.0", //版本号
+    "description": "js基础登顶", //项目描述
+    "icons": { //icons定义了扩展相关图标文件的位置
+        "16": "images/icon.png",
+        "48": "images/icon.png",
+        "128": "images/icon.png"
+    },
+    "browser_action": {
+        "default_icon": { //定义了相应图标文件的位置
+            "19": "images/icon.png",
+            "38": "images/icon.png"
+        },
+        "default_title": "js基础登顶", //当用户鼠标悬停于扩展图标上所显示的文字
+        "default_popup": "index.html" //当用户单击扩展图标时所显示页面的文件位置。
+    }
+}
