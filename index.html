@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
     <style>
         * {
             margin: 0;
@@ -18,15 +20,16 @@
         }
         .btn{
             position: relative;
-            width: 150px;
-            height: 50px;
-            line-height: 50px;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
             text-align: center;
            
             border-radius: 50px;
             background: #7986cb;
-            color: #fff;
-            font-size: 24px;
+            color: #37474f;
+            font-weight: bold;
+            font-size: 16px;
             transition: background-color 0.3s, color 0.3s;
             border:#fff 3px solid;
             margin: auto;
@@ -52,13 +55,38 @@
             background:rgba(0, 0, 0, .3);
             
         }
+        #content{
+            padding: 20px;
+        }
+        .box{
+            padding: 10px;
+            display: inline-block;
+            color: #fff;
+            animation: move .3s;
+        }
+        .box input{
+            border-width: 0;
+            outline:none;
+            color: #fff;
+            background: transparent;
+            border-bottom: 1px solid lemonchiffon;
+            height: 30px;
+            width: 150px;
+        }
+        .box input:focus{ border-width: 0;border-bottom: 1px solid #fff; }
+        @keyframes move{
+            from {transform: scale(0.5);opacity: 0;}
+            to {transform:scale(1);opacity: 1;}
+        }
     </style>
 </head>
+
 <body>
     <div id="toTop">
-        <div class="btn">刷新
+        <div id = "btn" class="btn">刷新
             <div></div>
         </div>
+        <div id="content"></div>
     </div>
     <script src="./json/data.js"></script>
     <script src="js/practise.js"></script>
