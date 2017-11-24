@@ -9,4 +9,4 @@ function my_clock(el) {
     setTimeout(function () { my_clock(el) }, 1000);
 }
 var toTop = document.getElementById('toTop');
-my_clock(toTop);
+// my_clock(toTop);
